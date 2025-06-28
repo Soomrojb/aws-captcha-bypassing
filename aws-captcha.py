@@ -101,6 +101,8 @@ def get_captcha_word(words):
             if next_word not in stopwords and len(next_word) >= 2:
                 return next_word
     return None
+
+# main
 for attempt in range(Captcha_retrys):
     print(f"Attempt {attempt + 1} of {Captcha_retrys}...")
 
